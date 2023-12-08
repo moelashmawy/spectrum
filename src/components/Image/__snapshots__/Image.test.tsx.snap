@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Image Image snapshot when isAscending 1`] = `
+<img
+  class="sc-bdfCDU eEOjSd"
+  height="60"
+  src="mock_img.jpg"
+  width="60"
+/>
+`;
+
+exports[`Image Image snapshot when not isAscending 1`] = `
+<img
+  class="sc-bdfCDU bRkxDg"
+  height="60"
+  src="mock_img.jpg"
+  width="60"
+/>
+`;

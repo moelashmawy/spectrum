@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button Card snapshot with all data 1`] = `
+<div
+  class="sc-gsTDqH gbgLXD"
+>
+  <p
+    class="status"
+  >
+    Status: 
+    Rocket systems are operational and monitoring.
+  </p>
+  <button
+    class="sc-bdfCDU fLjGwI"
+  >
+    Update Data
+  </button>
+</div>
+`;
