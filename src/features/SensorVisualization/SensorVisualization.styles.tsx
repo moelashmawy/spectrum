@@ -12,6 +12,7 @@ export const StyledVisContainer = styled.div`
 
 export const StyledCharContainer = styled.div`
   display: flex;
+  gap: 30px;
   align-items: center;
   justify-content: space-between;
 `;
