@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import StyledChart from "../../components/Chart/Chart";
 import StyledRocketImage from "../../components/Image/Image";
-import Rocket from "../../assets/rocket.svg";
+import Rocket from "../../assets/rocket.png";
 import { useAppSelector } from "../../redux/hooks";
 import { getCurrentTime } from "../../utils/time";
 import Card from "../../components/Card/Card";
@@ -72,8 +72,8 @@ const SensorVisualization: React.FC<SensorVisualizationProps> = ({
           <StyledRocketImage
             image={Rocket}
             isAscending={isAscending}
-            width={120}
-            height={120}
+            width={160}
+            height={160}
           />
         </StyledCharContainer>
         <StyledChart
