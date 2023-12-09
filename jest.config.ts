@@ -3,7 +3,8 @@ import { jsWithTsESM } from "ts-jest/presets";
 export default {
   ...jsWithTsESM,
   moduleNameMapper: {
-    "\\.(css|sass|scss)$": "identity-obj-proxy",
+    "^.+\\.(jpg|ico|jpeg|png|gif)$": "<rootDir>/test/mocks/fileMock.ts",
+    "^.+\\.(css|sass|scss)$": "identity-obj-proxy",
     "^.+\\.svg$": "jest-svg-transformer",
   },
   preset: "ts-jest/presets/default-esm",

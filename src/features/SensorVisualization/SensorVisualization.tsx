@@ -56,6 +56,7 @@ const SensorVisualization: React.FC<SensorVisualizationProps> = ({
         [getCurrentTime(), Math.trunc(altitude)],
       ]);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [altitude]);
 
   return (
