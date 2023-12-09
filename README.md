@@ -2,6 +2,8 @@
 
 This web application provides real-time monitoring and visualization of important sensor data from the "Spectrum" launch vehicle during its maiden flight. The app is built using Vite and includes features for both manual data retrieval and continuous live streaming.
 
+## This site was deployed to Netlify [Live demo](https://isar-spectrum.netlify.app/).
+
 ## Getting Started
 
 To run the app locally, follow these steps:
