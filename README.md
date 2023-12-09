@@ -1,30 +1,84 @@
-# React + TypeScript + Vite
+# Rocket Monitoring App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This web application provides real-time monitoring and visualization of important sensor data from the "Spectrum" launch vehicle during its maiden flight. The app is built using Vite and includes features for both manual data retrieval and continuous live streaming.
 
-Currently, two official plugins are available:
+## Getting Started
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+To run the app locally, follow these steps:
 
-## Expanding the ESLint configuration
+1. **Clone the Repository:**
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+   ```bash
+   git clone https://github.com/moelashmawy/spectrum
 
-- Configure the top-level `parserOptions` property like this:
+   ```
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+2. **Install Dependencies:**
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+   ```bash
+   cd spectrum
+   npm install
+
+   ```
+
+3. **Run the App:**
+
+   ```bash
+   npm start
+   The application will be accessible at http://localhost:3000.
+   ```
+
+## Scripts
+
+- **Start:**
+
+  ```bash
+  npm start
+  Launches the development server for the app.
+
+  ```
+
+- **Test:**
+
+  ```bash
+  npm test
+  Runs Jest tests.
+
+  ```
+
+- **Test (Watch):**
+
+  ```bash
+  npm run test:watch
+  Runs Jest tests in watch mode.
+
+  ```
+
+- **Prepare:**
+  ```bash
+  npm run prepare
+  Installs Husky Git hooks.
+  ```
+
+## Features
+
+- **Manual Data Retrieval:**
+  Click the "Update Data" button to manually fetch sensor data from the launch vehicle.
+
+- **Live Streaming:**
+  The app continuously streams live sensor data from the launch vehicle through a WebSocket connection.
+
+- **Critical Status Alerts:**
+  Receive alerts when critical status changes occur, such as when user action is required.
+
+- **Act on Spectrum:**
+  Users can take action on the launch vehicle by clicking the provided button when required.
+
+## Technologies Used
+
+- **Vite:** The fast, opinionated web framework for React development.
+- **React:** A JavaScript library for building user interfaces.
+- **Redux:** managing and centralizing application state.
+- **Jest:** JavaScript testing framework.
+- **ESLint and Prettier:** Code linting and formatting tools.
+- **Husky:** Git hooks for running tasks before commits.
