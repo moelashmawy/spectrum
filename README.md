@@ -52,31 +52,31 @@ The application will be accessible at http://localhost:3000.
 
   ```bash
   npm start
-  Launches the development server for the app.
-
   ```
+
+  Launches the development server for the app.
 
 - **Test:**
 
   ```bash
   npm test
-  Runs Jest tests.
-
   ```
+
+  Runs Jest tests.
 
 - **Test (Watch):**
 
   ```bash
   npm run test:watch
-  Runs Jest tests in watch mode.
-
   ```
+
+  Runs Jest tests in watch mode.
 
 - **Prepare:**
   ```bash
   npm run prepare
-  Installs Husky Git hooks.
   ```
+  Installs Husky Git hooks.
 
 ## Features
 
