@@ -13,7 +13,8 @@ export default defineConfig({
     }),
   ],
   server: {
-    open: true,
+    host: true,
+    open: process.env.IS_DOCKER ? false : true,
     port: 3000,
   },
 });
