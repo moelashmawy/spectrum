@@ -15,10 +15,10 @@ export const spectrumSlice = createSlice({
   initialState,
   reducers: {
     setVelocity: (state, action: PayloadAction<number>) => {
-      state.velocity = Math.abs(action.payload);
+      state.velocity = Math.trunc(Math.abs(action.payload));
     },
     setAltitude: (state, action: PayloadAction<number>) => {
-      state.altitude = Math.abs(action.payload);
+      state.altitude = Math.trunc(Math.abs(action.payload));
     },
     setTemperature: (state, action: PayloadAction<number>) => {
       state.temperature = action.payload;

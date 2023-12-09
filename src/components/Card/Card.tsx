@@ -30,6 +30,7 @@ const StyledInfoSection = styled.div<{ $isAlert?: boolean }>`
     gap: 15px;
     justify-content: center;
     align-items: center;
+    padding-bottom: 15px;
   }
 `;
 

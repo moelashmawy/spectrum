@@ -15,7 +15,7 @@ import {
   StyledVisContainer,
 } from "./SensorVisualization.styles";
 
-const ALTITUDE_THROUG = 10;
+const ALTITUDE_THROUG = 13;
 
 interface SensorVisualizationProps {
   onUpdateClick?: () => void;
@@ -46,15 +46,12 @@ const SensorVisualization: React.FC<SensorVisualizationProps> = ({
     if (altitudeData.length === ALTITUDE_THROUG) {
       setAltitudeData([
         ...altitudeData.splice(1, 1),
-        [getCurrentTime(), Math.trunc(altitude)],
+        [getCurrentTime(), altitude],
       ]);
     }
 
     if (altitudeData.length < ALTITUDE_THROUG) {
-      setAltitudeData([
-        ...altitudeData,
-        [getCurrentTime(), Math.trunc(altitude)],
-      ]);
+      setAltitudeData([...altitudeData, [getCurrentTime(), altitude]]);
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [altitude]);
@@ -65,7 +62,7 @@ const SensorVisualization: React.FC<SensorVisualizationProps> = ({
         <StyledCharContainer>
           <StyledChart
             type="Gauge"
-            chartData={[["Speed"], [velocity]]}
+            chartData={[["Velocity"], [velocity]]}
             chartOptions={VELOCITY_OPTIONS}
             width={300}
             height={300}
